@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fanfan.hotel.activity.InfoCompleteActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar.MyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@mipmap/ic_top_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@android:color/black">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/roll_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            app:rollviewpager_play_delay="3000" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y25"
+            android:layout_marginTop="@dimen/y15">
+
+            <ImageView
+                android:id="@+id/icon_tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_pay_tip"
+                android:src="@mipmap/tick" />
+
+            <TextView
+                android:id="@+id/tv_pay_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x10" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_peice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y6"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_peice_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="付款金额："
+                android:textColor="@color/black"
+                android:textSize="@dimen/x8" />
+
+            <TextView
+                android:id="@+id/tv_peice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/y6"
+                android:layout_toRightOf="@+id/tv_peice_tip"
+                android:text="258.00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x8" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y6"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_person_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入住人："
+                android:textColor="@color/black"
+                android:textSize="@dimen/x8" />
+
+            <TextView
+                android:id="@+id/tv_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/y6"
+                android:layout_toRightOf="@+id/tv_person_tip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x8" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_hometype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y6"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_hometype_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房间类型："
+                android:textColor="@color/black"
+                android:textSize="@dimen/x8" />
+
+            <TextView
+                android:id="@+id/tv_hometype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/y6"
+                android:layout_toRightOf="@+id/tv_hometype_tip"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x8" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_homepos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y6"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_homepos_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="房间位置："
+                android:textColor="@color/black"
+                android:textSize="@dimen/x8" />
+
+            <TextView
+                android:id="@+id/tv_homepos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/y6"
+                android:layout_toRightOf="@+id/tv_homepos_tip"
+                android:text="二层右侧301房"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x8" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tipinfp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y6"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_tipinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/y6"
+                android:text="请在右侧取卡区取门禁卡"
+                android:textColor="@color/crimson"
+                android:textSize="@dimen/x8" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y6"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/y6"
+                android:text="感谢您的入住!欢迎下次光临"
+                android:textColor="@color/black"
+                android:textSize="@dimen/x9" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

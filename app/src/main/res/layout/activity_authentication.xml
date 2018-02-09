@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fanfan.hotel.activity.AuthenticationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar.MyStyle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@mipmap/ic_top_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:titleTextColor="@android:color/black">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.jude.rollviewpager.RollPagerView
+            android:id="@+id/roll_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y120"
+            app:rollviewpager_play_delay="3000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/y14">
+
+            <TextView
+                android:id="@+id/induction_zone"
+                android:layout_width="@dimen/x125"
+                android:layout_height="@dimen/y55"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="感 应 区"
+                android:textSize="@dimen/x10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/induction_zone"
+                android:layout_marginTop="@dimen/y1"
+                android:text="请持有效身份证，把身份证放在右侧感应区处，我们会对您进行身份识别"
+                android:textSize="@dimen/x6" />
+
+            <Button
+                android:id="@+id/takephoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/induction_zone"
+                android:text="拍照"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/y14"
+            android:paddingRight="@dimen/y14"
+            android:paddingBottom="@dimen/y7">
+
+            <SurfaceView
+                android:id="@+id/checkout_surfaceview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/y6" />
+
+            <com.fanfan.hotel.ui.camera.DetectionFaceView
+                android:id="@+id/detection_face_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/y6" />
+
+            <com.fanfan.hotel.ui.camera.DetectOpenFaceView
+                android:id="@+id/opencv_face_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/y6" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_takephoto_left_top" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/ic_takephoto_right_top" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:background="@mipmap/ic_takephoto_left_bottom" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/ic_takephoto_right_bottom" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

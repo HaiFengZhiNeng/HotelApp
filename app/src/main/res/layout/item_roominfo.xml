@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/y7"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/y4"
+    app:contentPadding="@dimen/y7">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_room"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/y3"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标准间双人床无烟"
+            android:textColor="@color/black"
+            android:textSize="@dimen/x8" />
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2张1.2米宽单人床    入住2人    24平方米左右 有窗"
+            android:textSize="@dimen/x6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥308"
+                    android:textColor="@color/crimson"
+                    android:textSize="@dimen/x8" />
+
+                <TextView
+                    android:id="@+id/tv_surplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="仅剩3间"
+                    android:textColor="@color/goldyellow"
+                    android:textSize="@dimen/x6" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_look"
+                style="@style/redButton"
+                android:layout_width="@dimen/y33"
+                android:layout_height="@dimen/y13"
+                android:layout_alignParentRight="true"
+                android:text="查看"
+                android:textSize="@dimen/x8" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

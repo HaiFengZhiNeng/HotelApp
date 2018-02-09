@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">hotel</string>
+    <string name="app_id">5a27877d</string>
+
+    <string name="welcome">您好，很高兴为您服务，请问有什么可以帮您?</string>
+
+    <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>
+    <string name="tips_not_wifi_confirm">Resume</string>
+    <string name="tips_not_wifi_cancel">Stop play</string>
+    <string name="no_url">No mUrl</string>
+
+    <string name="settings">设置</string>
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。\n\n最后点击两次后退按钮，即可返回。</string>
+    <string name="quit">退出</string>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="tip_close_camera">关闭摄像头</string>
+    <string name="tip_open_camera">打开摄像头</string>
+    <string name="tip_switch_camera">切换摄像头</string>
+    <string name="tip_close_mic">关闭麦克风</string>
+    <string name="tip_open_mic">打开麦克风</string>
+    <string name="tip_set_speaker">切换到扬声器</string>
+    <string name="tip_set_headset">切换到听筒</string>
+    <string name="tip_set_beauty">设置美颜</string>
+    <string name="invite">邀请</string>
+    <string name="log">日志</string>
+    <string name="invite_tip">输入邀请用户id</string>
+    <string name="tip_end_call">挂断</string>
+
+</resources>

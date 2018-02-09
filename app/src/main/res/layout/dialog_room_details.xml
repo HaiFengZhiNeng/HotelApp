@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/y190"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/y15"
+    android:paddingRight="@dimen/y15">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y28">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="标准间双人床无烟"
+            android:textColor="@color/goldyellow"
+            android:textSize="@dimen/x9" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/y8"
+            android:layout_toRightOf="@id/tv_title"
+            android:gravity="center"
+            android:text="￥308"
+            android:textColor="@color/crimson"
+            android:textSize="@dimen/x8" />
+
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/ic_delete" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y8">
+
+        <ImageView
+            android:id="@+id/iv_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y8"
+        android:text="2张1.2米宽单人床    入住2人    24平方米左右 有窗"
+        android:textSize="@dimen/x6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y8"
+        android:text="房型设施" />
+
+    <TextView
+        android:id="@+id/tv_many_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y8"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/y15">
+
+        <Button
+            android:id="@+id/btn_look"
+            style="@style/redButton"
+            android:layout_width="@dimen/y33"
+            android:layout_height="@dimen/y20"
+            android:layout_centerInParent="true"
+            android:text="确认房型"
+            android:textSize="@dimen/x8" />
+    </RelativeLayout>
+
+</LinearLayout>
